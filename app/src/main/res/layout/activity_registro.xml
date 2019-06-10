@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglego3"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="289dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984">
+
+        <EditText
+            android:id="@+id/txtRegistrarEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textColor="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107" />
+
+        <EditText
+            android:id="@+id/txtRegistrarPass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

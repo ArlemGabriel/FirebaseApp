@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    app:cardElevation="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewPrd"
+            android:layout_width="115dp"
+            android:layout_height="114dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/nombrePrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageViewPrd"
+            android:text="Nombre"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/descripcionPrdlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombrePrd"
+            android:layout_toRightOf="@+id/imageViewPrd"
+            android:textSize="15sp"
+            android:text="Descripción: "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/descripcionPrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descripcionPrdlbl"
+            android:layout_toRightOf="@+id/imageViewPrd"
+            android:text="Aquí va la descripción" />
+        <TextView
+            android:id="@+id/precioPrdlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descripcionPrd"
+            android:layout_toRightOf="@+id/imageViewPrd"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Precio: " />
+        <TextView
+            android:id="@+id/precioPrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precioPrdlbl"
+            android:layout_toRightOf="@+id/imageViewPrd"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Aquí va el precio" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

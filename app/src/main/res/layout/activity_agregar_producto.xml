@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="235dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-14dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="50dp"
+        android:paddingRight="15dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nombreLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Producto"
+                android:singleLine="true"
+                android:textColor="#FFC107"
+                android:textColorHint="#94FFC107"
+                android:textColorLink="#FFC107"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:typeface="sans" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/precioLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtPrecio"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Precio"
+                android:textColor="#FFC107"
+                android:textColorHint="#94FFC107"
+                android:textColorLink="#ffc107"
+                android:typeface="sans" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/descripcionLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Descripcion"
+                android:textColor="#FFC107"
+                android:textColorHint="#94FFC107"
+                android:textColorLink="#FFC107"
+                android:textCursorDrawable="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/urlLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="507dp"
+        android:background="#FFC107"
+        android:text="Examinar"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="100dp" />
+
+    <Button
+        android:id="@+id/btnSubir"
+        android:layout_width="407dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFC107"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="139dp"
+        app:srcCompat="@drawable/placeholder" />
+</RelativeLayout>
